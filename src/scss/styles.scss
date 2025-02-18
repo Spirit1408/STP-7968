@@ -31,5 +31,20 @@
   font-weight: 156%;
 
   color: var(--white);
+}
+
+.global-wrapper {
   background-color: var(--bg);
+  max-width: 1400px;
+  margin: 0 auto;
+  
+  @include media(mobile) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  @include media(desktop) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
