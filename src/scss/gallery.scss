@@ -1,0 +1,26 @@
+.gallery {
+  overflow: hidden;
+
+  @include media(mobile) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  @include media(desktop) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.gallery-title {
+  @include media(mobile) {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  @include media(desktop) {
+    font-size: 48px;
+    margin-bottom: 48px;
+  }
+}
