@@ -160,8 +160,10 @@
 }
 
 .footer-link {
-  &:hover {
-    text-decoration: underline;
+  transition: color 250ms ease-out;
+  &:hover,
+  &:focus {
+    color: var(--red-links-hover);
   }
 
   @include media(mobile) {

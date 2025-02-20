@@ -32,7 +32,7 @@
 }
 
 .active {
-  transform: translate(-50%,0%);
+  transform: translate(-50%, 0%);
 }
 
 .cookie-policy-info {
@@ -94,6 +94,11 @@
   background: var(--white);
   outline: none;
   border: none;
+  transition: box-shadow 250ms ease-out;
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.46);
+  }
 
   @include media(mobile) {
     padding: 12px;
@@ -116,6 +121,11 @@
   color: var(--white);
   background: transparent;
   outline: none;
+  transition: box-shadow 250ms ease-out;
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.46);
+  }
 
   @include media(mobile) {
     padding: 12px;

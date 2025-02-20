@@ -22,15 +22,29 @@
     <div class="global-wrapper">
       <main>
         <section class="policies">
-          <div class="policies-back-btn">
-            <img
-              class="policies-back-btn-icon"
-              src="./img/extra-pages/back-icon.png"
-              srcset="./img/extra-pages/back-icon@2x.png 2x"
-              alt=""
-            />
-            <a href="index.html" class="policies-back-link">Back</a>
-          </div>
+          <a href="index.html" class="policies-back-btn">
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./img/extra-pages/back-btn-d.png    1x,
+                  ./img/extra-pages/back-btn-d@2x.png 2x
+                "
+              />
+              <source
+                media="(min-width: 320px)"
+                srcset="
+                  ./img/extra-pages/back-btn-m.png    1x,
+                  ./img/extra-pages/back-btn-m@2x.png 2x
+                "
+              />
+              <img
+                class="policies-back-btn-icon"
+                src="./img/extra-pages/back-btn-m.png"
+                alt=""
+              />
+            </picture>
+          </a>
 
           <div class="policies-articles-set">
             <article class="policies-article">

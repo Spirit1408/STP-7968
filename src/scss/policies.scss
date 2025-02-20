@@ -1,58 +1,45 @@
 .policies {
   @include media(mobile) {
-    padding-top: 25px;
+    padding-top: 16px;
     padding-bottom: 38px;
   }
 
   @include media(desktop) {
-    padding-top: 33px;
+    padding-top: 22px;
     padding-bottom: 92px;
   }
 }
 
 .policies-back-btn {
-  position: relative;
-  cursor: pointer;
+  display: inline-block;
 
   @include media(mobile) {
-    margin-bottom: 22px;
+    margin-bottom: 10px;
   }
 
   @include media(desktop) {
-    margin-bottom: 35px;
+    margin-bottom: 20px;
   }
 }
 
 .policies-back-btn-icon {
-  position: absolute;
-
-  left: -4px;
-
+  transition: background-image 250ms ease-out;
   @include media(mobile) {
     max-width: 79px;
-    top: -6px;
   }
 
   @include media(desktop) {
-    top: -12px;
     max-width: 109px;
   }
 }
 
-.policies-back-link {
-  position: relative;
-  font-family: var(--second-family);
-  font-size: 16px;
-  font-weight: 700;
-  z-index: 2;
-
-  @include media(mobile) {
-    padding-left: 25px;
-  }
-
-  @include media(desktop) {
-    padding-left: 42px;
-  }
+.policies-back-btn:hover .policies-back-btn-icon,
+.policies-back-btn:focus .policies-back-btn-icon {
+  background-image: radial-gradient(
+    50% 50% at 50% 50%,
+    rgb(217, 217, 217) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 
 .policies-article {
