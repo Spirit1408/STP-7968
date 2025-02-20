@@ -1,0 +1,127 @@
+.cookie-policy {
+  display: flex;
+  position: fixed;
+  z-index: 999;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 100%);
+  box-shadow: inset 4px 4px 5px 0 rgba(189, 76, 76, 0.1),
+    4px 4px 30px 0 rgba(21, 10, 10, 0.29), 4px 4px 5px 0 rgba(18, 17, 17, 0.26),
+    inset 4px 4px 10px 0 rgba(204, 45, 45, 0.3),
+    inset -4px -4px 4px 0 rgba(191, 40, 40, 0.05);
+  background: var(--cookies-card);
+  border-radius: 30px 30px 0 0;
+  transition: transform 250ms ease-out;
+
+  @include media(mobile) {
+    flex-direction: column;
+    gap: 20px;
+    max-width: 320px;
+    padding: 21px 16px;
+  }
+
+  @include media(desktop) {
+    flex-direction: row;
+    gap: 0;
+    width: 100%;
+    max-width: 1200px;
+    padding: 32px 80px 48px;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.active {
+  transform: translate(-50%,0%);
+}
+
+.cookie-policy-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  @include media(mobile) {
+    text-align: center;
+  }
+
+  @include media(desktop) {
+    text-align: left;
+  }
+}
+
+.cookie-policy-title {
+  @include media(mobile) {
+    font-size: 20px;
+    line-height: 140%;
+  }
+
+  @include media(desktop) {
+    font-size: 48px;
+    line-height: 137%;
+  }
+}
+
+.cookie-policy-text {
+  @include media(mobile) {
+    font-size: 14px;
+    line-height: 157%;
+  }
+
+  @include media(desktop) {
+    font-size: 24px;
+    line-height: 154%;
+    max-width: 554px;
+  }
+}
+
+.cookie-policy-buttons {
+  display: flex;
+  flex-direction: column;
+
+  @include media(mobile) {
+    gap: 16px;
+  }
+
+  @include media(desktop) {
+    gap: 24px;
+  }
+}
+
+.cookie-policy-accept {
+  border-radius: 10px;
+  font-family: var(--font-family);
+  color: var(--black);
+  background: var(--white);
+  outline: none;
+  border: none;
+
+  @include media(mobile) {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  @include media(desktop) {
+    padding: 16px 34px;
+    font-size: 18px;
+  }
+}
+
+.cookie-policy-reject {
+  border-radius: 10px;
+  border: 2px solid var(--white);
+  border-radius: 10px;
+  font-family: var(--font-family);
+  color: var(--white);
+  background: transparent;
+  outline: none;
+
+  @include media(mobile) {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  @include media(desktop) {
+    padding: 16px 34px;
+    font-size: 18px;
+  }
+}

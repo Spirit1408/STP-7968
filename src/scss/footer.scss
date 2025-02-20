@@ -54,7 +54,8 @@
   background: var(--primary-red);
   transition: background 0.3s ease;
   height: 100%;
-  &:hover {
+  &:hover,
+  &:focus {
     background: var(--red-btn-light);
   }
 
