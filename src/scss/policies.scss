@@ -114,3 +114,16 @@
 .policies-block {
   margin-bottom: 24px;
 }
+
+.policies-articles-set {
+  display: flex;
+  flex-direction: column;
+
+  @include media(mobile) {
+    gap: 16px;
+  }
+
+  @include media(desktop) {
+    gap: 20px;
+  }
+}
