@@ -16,10 +16,12 @@
   @include media(mobile) {
     font-size: 20px;
     text-align: center;
+    line-height: 140%;
     margin-bottom: 16px;
   }
 
   @include media(desktop) {
+    line-height: 137%;
     font-size: 48px;
     margin-bottom: 48px;
   }
