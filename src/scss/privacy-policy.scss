@@ -1,0 +1,115 @@
+.privacy-policy {
+  @include media(mobile) {
+    padding-top: 25px;
+    padding-bottom: 38px;
+  }
+
+  @include media(desktop) {
+    padding-top: 33px;
+    padding-bottom: 92px;
+  }
+}
+
+.back-btn {
+  position: relative;
+
+  @include media(mobile) {
+    margin-bottom: 22px;
+  }
+
+  @include media(desktop) {
+    margin-bottom: 35px;
+  }
+}
+
+.back-btn-icon {
+  position: absolute;
+
+  left: -4px;
+
+  @include media(mobile) {
+    max-width: 79px;
+    top: -6px;
+  }
+
+  @include media(desktop) {
+    top: -12px;
+    max-width: 109px;
+  }
+}
+
+.back-link {
+  position: relative;
+  font-family: var(--second-family);
+  font-size: 16px;
+  font-weight: 700;
+  z-index: 2;
+
+  @include media(mobile) {
+    padding-left: 25px;
+  }
+
+  @include media(desktop) {
+    padding-left: 42px;
+  }
+}
+
+.privacy-policy-article {
+  box-shadow: inset 4px 4px 5px 0 rgba(166, 166, 166, 0.1),
+    4px 4px 30px 0 rgba(21, 10, 10, 0.29), 4px 4px 5px 0 rgba(18, 17, 17, 0.26),
+    inset 4px 4px 10px 0 rgba(184, 184, 184, 0.15),
+    inset -4px -4px 4px 0 rgba(99, 99, 99, 0.05);
+  background: var(--gray-transparent);
+
+  @include media(mobile) {
+    border-radius: 10px;
+    padding: 16px 12px;
+  }
+
+  @include media(desktop) {
+    border-radius: 40px;
+    padding: 48px 40px;
+  }
+}
+
+.privacy-policy-title {
+  margin-bottom: 16px;
+
+  @include media(mobile) {
+    font-size: 20px;
+    line-height: 140%;
+  }
+
+  @include media(desktop) {
+    font-size: 48px;
+    line-height: 137%;
+  }
+}
+
+.privacy-policy-text {
+  @include media(desktop) {
+    font-size: 16px;
+    line-height: 156%;
+  }
+}
+
+.privacy-policy-subtitle {
+  @include media(mobile) {
+    font-size: 16px;
+    line-height: 144%;
+  }
+
+  @include media(desktop) {
+    font-size: 20px;
+    line-height: 140%;
+  }
+}
+
+.privacy-policy-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.privacy-policy-block {
+  margin-bottom: 24px;
+}
