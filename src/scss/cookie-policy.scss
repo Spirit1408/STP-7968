@@ -98,11 +98,13 @@
   @include media(mobile) {
     padding: 12px;
     font-size: 16px;
+    line-height: 156%;
   }
 
   @include media(desktop) {
     padding: 16px 34px;
     font-size: 18px;
+    line-height: 133%;
   }
 }
 
@@ -118,10 +120,12 @@
   @include media(mobile) {
     padding: 12px;
     font-size: 16px;
+    line-height: 156%;
   }
 
   @include media(desktop) {
     padding: 16px 34px;
     font-size: 18px;
+    line-height: 133%;
   }
 }
