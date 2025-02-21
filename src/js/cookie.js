@@ -7,15 +7,15 @@ export const initCookiePolicy = () => {
 	const hasCookieConsent = localStorage.getItem(COOKIE_CONSENT_KEY);
 
 	if (!hasCookieConsent) {
-		cookiePolicy.classList.add("active");
+		cookiePolicy.classList.add("cookie-policy-active");
 	}
 
 	acceptButton.addEventListener("click", () => {
 		localStorage.setItem(COOKIE_CONSENT_KEY, true);
-		cookiePolicy.classList.remove("active");
+		cookiePolicy.classList.remove("cookie-policy-active");
 	});
 
 	rejectButton.addEventListener("click", () => {
-		cookiePolicy.classList.remove("active");
+		cookiePolicy.classList.remove("cookie-policy-active");
 	});
 };

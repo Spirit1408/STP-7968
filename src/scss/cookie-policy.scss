@@ -31,8 +31,9 @@
   }
 }
 
-.active {
+.cookie-policy-active {
   transform: translate(-50%, 0%);
+  min-width: 320px;
 }
 
 .cookie-policy-info {
