@@ -1,0 +1,87 @@
+.how-to-play {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 48px;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    margin-top: 65px;
+    margin-bottom: 50px;
+    gap: 48px;
+  }
+}
+.how-to-play__title {
+  font-size: 20px;
+  line-height: 1.4;
+
+  @include media(desktop) {
+    font-size: 48px;
+  }
+}
+.how-to-play__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  @include media(desktop) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+  }
+}
+
+.how-to-play__item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-radius: 10px;
+  padding: 16px 12px;
+  box-shadow:
+    inset 4px 4px 5px 0 rgba(189, 76, 76, 0.1),
+    4px 4px 30px 0 rgba(21, 10, 10, 0.29),
+    4px 4px 5px 0 rgba(18, 17, 17, 0.26),
+    inset 4px 4px 10px 0 rgba(204, 45, 45, 0.3),
+    inset -4px -4px 4px 0 rgba(191, 40, 40, 0.05);
+  background-color: rgba(121, 35, 35, 0.47);
+  @include media(desktop) {
+    gap: 24px;
+    border-radius: 16px;
+    padding: 24px;
+    width: 320px;
+    height: 458px;
+  }
+}
+.how-to-play__image {
+  border-radius: 8px;
+  width: 264px;
+  height: 266px;
+  @include media(desktop) {
+    border-radius: 10px;
+    width: 272px;
+    height: 242px;
+  }
+}
+.how-to-play-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  @include media(desktop) {
+    gap: 16px;
+  }
+}
+
+.how-to-play__subtitle {
+  font-size: 16px;
+
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+.how-to-play__text {
+  line-height: 1.6;
+
+  @include media(desktop) {
+  }
+}
