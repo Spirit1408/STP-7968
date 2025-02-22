@@ -32,7 +32,7 @@
     <script type="module" crossorigin src="/STP-7968/commonHelpers2.js"></script>
     <link rel="modulepreload" crossorigin href="/STP-7968/assets/vendor-e813fbe4.js">
     <link rel="stylesheet" href="/STP-7968/assets/vendor-7c8ef494.css">
-    <link rel="stylesheet" href="/STP-7968/assets/styles-058e57e1.css">
+    <link rel="stylesheet" href="/STP-7968/assets/styles-777fcdba.css">
   </head>
   <body>
     <div class="global-wrapper">
@@ -104,6 +104,7 @@
     <div class="hero-image">
       <picture>
         <source srcset="/STP-7968/assets/hero-d-387695ee.png " media="(min-width: 1200px)" />
+        <source srcset="/STP-7968/assets/hero-6b48b8b2.png " media="(min-width: 320px)" />
         <img src="/STP-7968/assets/hero-6b48b8b2.png" alt="Hero image" />
       </picture>
     </div>
@@ -111,17 +112,22 @@
 </section>
 
         <section id="description" class="description">
-  <img
-    class="description-img"
-    src="../img/description/Black-Knight.png"
-    alt="Black Knight"
-    srcset="
-      ../img/description/Black-Knight.png      1x,
-      ../img/description/Black-Knight@2x.png   2x,
-      ../img/description/Blick-Knight-d.png    1x,
-      ../img/description/Blick-Knight-d@2x.png 2x
-    "
-  />
+  <picture>
+    <source
+      media="(min-width: 1200px)"
+      srcset="/STP-7968/assets/Black-Knight-d-0e3f02c6.png 1x, /STP-7968/assets/Black-Knight-d@2x-054b740d.png 2x"
+    />
+    <source
+      media="(min-width: 320px)"
+      srcset="/STP-7968/assets/Black-Knight-b921e3ae.png 1x, /STP-7968/assets/Black-Knight@2x-c13d77cf.png 2x"
+    />
+    <img
+      class="description-img"
+      src="/STP-7968/assets/Black-Knight-b921e3ae.png"
+      alt="Black Knight"
+    />
+  </picture>
+  
   <div class="description-container">
     <h2 class="description-title">Game Description</h2>
     <p class="description-text">
