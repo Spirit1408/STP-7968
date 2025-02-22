@@ -1,0 +1,199 @@
+.features {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 48px;
+  @include media(desktop) {
+    margin-top: 100px;
+    gap: 48px;
+    width: 1120px;
+    height: 832px;
+  }
+}
+.features-title {
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+
+  @include media(desktop) {
+    font-size: 48px;
+  }
+}
+.features-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  grid-template-areas:
+    'cust cust'
+    'house house'
+    'battles camp'
+    'heroes graphics'
+    'progres progres'
+    'orch orch'
+    'alliances alliances'
+    'events fire'
+    'modes arena'
+    'strategy strategy';
+
+  @include media(desktop) {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 16px;
+    grid-template-areas:
+      'heroes cust cust arena arena arena'
+      'heroes fire alliances alliances strategy strategy'
+      'camp camp graphics graphics orch events'
+      'battles house progres progres modes modes';
+  }
+}
+.features-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow:
+    inset 4px 4px 5px 0 rgba(189, 76, 76, 0.1),
+    4px 4px 30px 0 rgba(21, 10, 10, 0.29),
+    4px 4px 5px 0 rgba(18, 17, 17, 0.26),
+    inset 4px 4px 10px 0 rgba(204, 45, 45, 0.3),
+    inset -4px -4px 4px 0 rgba(191, 40, 40, 0.05);
+  background-color: rgba(121, 35, 35, 0.47);
+  @include media(desktop) {
+    gap: 16px;
+    padding: 20px 24px;
+  }
+}
+
+.features-subtitle {
+  font-size: 16px;
+  text-align: center;
+
+  @include media(desktop) {
+  }
+}
+.features-text {
+  line-height: 1.6;
+  text-align: center;
+  @include media(desktop) {
+  }
+}
+
+.features-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include media(desktop) {
+  }
+}
+.features-image {
+  @include media(desktop) {
+  }
+}
+.house {
+  grid-area: house;
+  height: 242px;
+  @include media(desktop) {
+    width: 221px;
+    height: 205px;
+  }
+}
+.fire {
+  grid-area: fire;
+  height: 153px;
+  @include media(desktop) {
+  }
+}
+.orch {
+  grid-area: orch;
+  height: 242px;
+  @include media(desktop) {
+    height: 203px;
+    width: 209px;
+  }
+}
+.features-strategy {
+  grid-area: strategy;
+  height: 128px;
+  @include media(desktop) {
+    height: 153px;
+  }
+}
+.features-heroes {
+  grid-area: heroes;
+  height: 282px;
+  @include media(desktop) {
+    height: 322px;
+  }
+}
+.features-graphics {
+  grid-area: graphics;
+  height: 238px;
+  @include media(desktop) {
+    height: 159px;
+  }
+}
+
+.features-progression {
+  grid-area: progres;
+  height: 106px;
+  @include media(desktop) {
+    height: 205px;
+  }
+}
+.features-modes {
+  grid-area: modes;
+  height: 211px;
+  @include media(desktop) {
+    height: 159px;
+  }
+}
+.features-customization {
+  grid-area: cust;
+  height: 128px;
+  @include media(desktop) {
+    height: 153px;
+  }
+}
+.features-events {
+  grid-area: events;
+  height: 179px;
+  @include media(desktop) {
+    height: 203px;
+  }
+}
+.features-battles {
+  grid-area: battles;
+  height: 172px;
+  @include media(desktop) {
+    height: 205px;
+  }
+}
+.features-arena {
+  grid-area: arena;
+  height: 238px;
+  @include media(desktop) {
+    height: 153px;
+  }
+}
+.features-campaigns {
+  grid-area: camp;
+  height: 216px;
+  @include media(desktop) {
+    height: 159px;
+  }
+}
+
+.features-alliances {
+  grid-area: alliances;
+  height: 150px;
+  @include media(desktop) {
+    height: 153px;
+  }
+}
+.features-leaderboards {
+  // grid-area: lead;
+  display: none;
+  @include media(desktop) {
+  }
+}
