@@ -1,6 +1,7 @@
 .cookie-policy {
   display: flex;
   position: fixed;
+  width: 100%;
   z-index: 999;
   left: 50%;
   bottom: 0;
@@ -23,7 +24,6 @@
   @include media(desktop) {
     flex-direction: row;
     gap: 0;
-    width: 100%;
     max-width: 1200px;
     padding: 32px 80px 48px;
     justify-content: space-between;
@@ -31,7 +31,7 @@
   }
 }
 
-.active {
+.cookie-policy-active {
   transform: translate(-50%, 0%);
 }
 

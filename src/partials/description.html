@@ -1,15 +1,26 @@
 <section id="description" class="description">
-  <img
-    class="description-img"
-    src="../img/description/Black-Knight.png"
-    alt="Black Knight"
-    srcset="
-      ../img/description/Black-Knight.png      1x,
-      ../img/description/Black-Knight@2x.png   2x,
-      ../img/description/Blick-Knight-d.png    1x,
-      ../img/description/Blick-Knight-d@2x.png 2x
-    "
-  />
+  <picture>
+    <source
+      media="(min-width: 1200px)"
+      srcset="
+        ./img/description/Black-Knight-d.png    1x,
+        ./img/description/Black-Knight-d@2x.png 2x
+      "
+    />
+    <source
+      media="(min-width: 320px)"
+      srcset="
+        ./img/description/Black-Knight.png    1x,
+        ./img/description/Black-Knight@2x.png 2x
+      "
+    />
+    <img
+      class="description-img"
+      src="./img/description/Black-Knight.png"
+      alt="Black Knight"
+    />
+  </picture>
+  
   <div class="description-container">
     <h2 class="description-title">Game Description</h2>
     <p class="description-text">
