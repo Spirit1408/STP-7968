@@ -40,23 +40,23 @@
   // }
 
   &::before {
-    background-image: url(../img/hero/Bg-photo.png);
+    background-image: url('/img/hero/Bg-photo.png');
     z-index: 1;
   }
 
   &::after {
-    background-image: url(../img/hero/smoke-bottom.png);
+    background-image: url('/img/hero/smoke-bottom.png');
     background-position: bottom;
     z-index: 2;
   }
 
   @media (min-resolution: 2dppx) {
     &::before {
-      background-image: url(../img/hero/Bg-photo@2x.png);
+      background-image: url('/img/hero/Bg-photo@2x.png');
     }
 
     &::after {
-      background-image: url(../img/hero/smoke-bottom@2x.png);
+      background-image: url('/img/hero/smoke-bottom@2x.png');
     }
   }
 
@@ -64,13 +64,13 @@
     margin-top: 130px;
     height: 590px;
     &::before {
-      background-image: url(../img/hero/Bg-photo-d.png);
+      background-image: url('/img/hero/Bg-photo-d.png');
       top: -130px;
       left: -40px;
       right: -40px;
     }
     &::after {
-      background-image: url(../img/hero/smoke-bottom-d.png);
+      background-image: url('/img/hero/smoke-bottom-d.png');
       left: -40px;
       right: -40px;
     }
@@ -78,10 +78,10 @@
 
   @media (min-resolution: 2dppx) and (min-width: 1200px) {
     &::before {
-      background-image: url(../img/hero/Bg-photo-d@2x.png);
+      background-image: url('/img/hero/Bg-photo-d@2x.png');
     }
     &::after {
-      background-image: url(../img/hero/smoke-bottom-d@2x.png);
+      background-image: url('/img/hero/smoke-bottom-d@2x.png');
     }
   }
 }
