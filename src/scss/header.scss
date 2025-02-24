@@ -1,5 +1,9 @@
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+  @include media(desktop) {
+    scroll-padding-top: 150px;
+  }
 }
 .header {
   position: fixed;
